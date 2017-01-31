@@ -1,0 +1,23 @@
+<h1>Event</h1>
+
+<%= form_for events do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :date %>
+    <%= f.text_area :date %>
+  </p>
+
+  <p>
+    <%= f.label :capacity %>
+    <%= f.text_area :capacity %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
