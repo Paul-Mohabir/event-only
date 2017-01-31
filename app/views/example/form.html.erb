@@ -1,1 +1,10 @@
-example@form page
+
+<%= form_for @job_application , url: {action: "form"} do |applicant| %>
+  <%= "Application" %>
+  Full Name <br><%= applicant.text_field :full_name %><br>
+  Phone Number <br><%= applicant.text_field :phone %><br>
+  Hobby <br><%= applicant.text_field :hobby %><br>
+  Years of Experience <br><%= applicant.text_field :years_experience %><br>
+  Available Start Date <br><%= applicant.text_field :available_date%><br>
+  <%= applicant.submit %>
+<% end %>
