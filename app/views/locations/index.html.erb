@@ -9,3 +9,8 @@
 <% @locations.each do |location| %>
   <%= render 'location', location: location %>
 <% end %>
+
+
+<p>
+  <%= link_to 'New Location', new_location_path %>
+</p>
